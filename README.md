@@ -27,7 +27,7 @@ Create Postgres ```fastapi``` database
 SECRET_KEY = "<ADD SECRET KEY>"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
-SQLALCHEMY_DATABASE_URL = "postgresql://<USER>:<PASS>#@localhost:<PORT>/fastapi"
+SQLALCHEMY_DATABASE_URL = "postgresql://<USER>:<PASS>@localhost:<PORT>/fastapi"
 ```
 
 Note: You can generate secret key by using ```openssl rand -hex 32``` command in your terminal.
