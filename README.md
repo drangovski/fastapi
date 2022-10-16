@@ -18,22 +18,27 @@ This is a simple FastAPI CRUD application. In order to try it out, please follow
 ##### 4. Install the requirements
 ```pip install -r requirements.txt```
 
-##### 5. Create **'local_settings.py'** file in the **'blog'** folder with the following settings:
+
+##### 5. Create Database
+Create Postgres ```fastapi``` database
+
+##### 6. Create **'local_settings.py'** file in the **'blog'** folder with the following settings:
 ```
 SECRET_KEY = "<ADD SECRET KEY>"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
+SQLALCHEMY_DATABASE_URL = "postgresql://<user>:<pass>#@localhost:5433/fastapi"
 ```
 
 Note: You can generate secret key by using ```openssl rand -hex 32``` command in your terminal.
 
 
-##### 6. Run uvicorn
+##### 7. Run uvicorn
 ```uvicorn blog.main:app --reload```
 
 
-##### 7. Access the API in your browser (through the FastAPI docs)
+##### 8. Access the API in your browser (through the FastAPI docs)
 ```localhost:8000/docs/```
 
 
-##### 8. Create an user. Authentication is required for all other endpoints.
+##### 9. Create an user. Authentication is required for all other endpoints.
