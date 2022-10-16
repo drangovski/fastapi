@@ -42,3 +42,4 @@ Note: You can generate secret key by using ```openssl rand -hex 32``` command in
 
 
 ##### 9. Create an user. Authentication is required for all other endpoints.
+NOTE: For username use the email address provided in the user creation process.
